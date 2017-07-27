@@ -1,0 +1,76 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage{xcookybooky}
+\usepackage[french]{babel}
+\usepackage[utf8]{inputenc}
+%\usepackage[T1]{fontenc}
+
+
+\usepackage[makeindex]{imakeidx}
+\usepackage{makeidx}
+\makeindex
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+\setHeadlines{ 
+ inghead = Ingrédients,
+ prephead = Préparation,
+ hinthead = Notes
+}
+
+\setRecipeColors{
+ recipename = black
+}
+
+
+\setRecipeLengths{
+	preparationwidth = 0.6\textwidth,
+	ingredientswidth = 0.4\textwidth,
+}
+
+\setRecipeSizes{
+	ing=\small,
+}
+
+\title{Livre de recettes}
+
+\begin{document}
+\maketitle
+
+\tableofcontents
+\clearpage
+
+\section{Plat principal}
+
+\subsection{Pâtes}
+
+\input{maincourse/pasta/sauce_spaghetti_josiane.tex}
+\clearpage
+\input{maincourse/pasta/lasagne_tomates_josiane.tex}
+\clearpage
+\input{maincourse/pasta/pates_provencales_josiane.tex}
+\clearpage
+\input{maincourse/pasta/pennes_saumon_epinard_josiane.tex}
+\clearpage
+\input{maincourse/pasta/cannellonis_au_fromage_de_chevre.tex}
+\clearpage
+\input{maincourse/pasta/lasagne_potiron_cottage_cheese_sauge.tex}
+
+\clearpage
+
+\section{Dessert}
+
+\input{dessert/moelleux_chocolat.tex}
+
+\clearpage
+
+\printindex
+
+
+\end{document}
